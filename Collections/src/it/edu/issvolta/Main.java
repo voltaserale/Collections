@@ -16,6 +16,14 @@ public class Main {
 		elencoUtenti[1]=new Utente(2, "fverdi", "92134", "Franco", "Verdi");
 		elencoUtenti[2]=new Utente(3, "ggialli", "41245", "Gino", "Gialli");
 		
+		//Oppure (per inizializzare già il vettore):
+		//Utente[] elencoUtenti={
+		//	new Utente(1, "mrossi", "12345", "Mario", "Rossi"),
+		//	new Utente(2, "fverdi", "92134", "Franco", "Verdi"),
+		//	new Utente(3, "ggialli", "41245", "Gino", "Gialli")
+		//	};
+		
+		
 		/*
 		//oppure (se ho già creato gli oggetti):
 		elencoUtenti[0]=u1;
@@ -34,7 +42,7 @@ public class Main {
 		
 		System.out.println("\nVettore utenti (ciclo for each)");
 		//metodo alternativo: for each (la variabile u assume il valore di ogni utente del vettore)
-		for (Utente u: elencoUtenti)
+		for (Utente u: elencoUtenti)	//per ogni utente in elencoUtenti
 			System.out.println(
 				"Utente "+ u.getId()+": "+
 				u.getNome()+" "+u.getCognome());
